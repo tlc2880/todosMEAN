@@ -1,6 +1,6 @@
 # Name: Tommy Cao
 # Date: 12/27/19
-# Description: Bookstore CRUD (Create, Read, Update, Delete) App using MEAN (MongoDB, Express, Angular, Node.js)
+# Description: Todos CRUD (Create, Read, Update, Delete) App using MEAN (MongoDB, Express, Angular, Node.js)
 
 # This app includes Express RESTful API
 
