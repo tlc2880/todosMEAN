@@ -1,0 +1,22 @@
+<!--// Name: Tommy Cao
+    // Date: 12/27/19
+    // Description: Bookstore CRUD App using MEAN (MongoDB, Express, Angular, Node.js) -->
+
+<div class="panel panel-default" ng-init="getGenres()">
+  <div class="panel-heading">
+    <h3 class="panel-title">Genres</h3>
+  </div>
+  <div class="panel-body">
+      <a class="btn btn-primary" href="#/genres/add">Add Genre</a>
+    <div class="row">
+    	<div ng-repeat="genre in genres">
+    		<div class="col-md-12">
+                <h4>{{genre.name}}</h4>     
+                <a class="btn btn-primary" href="#/genres/edit/{{genre._id}}">Edit</a>
+                <!-- <a class="btn btn-primary" href="#/books/details/{{book._id}}">View Details</a> -->
+                <a class="btn btn-primary" href="#" ng-click="removeGenre(genre._id)">Delete Genre</a>
+            </div>
+    	</div>
+    </div>
+  </div>
+</div>

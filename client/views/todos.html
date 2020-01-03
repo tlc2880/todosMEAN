@@ -1,0 +1,22 @@
+<!--// Name: Tommy Cao
+    // Date: 12/27/19
+    // Description: Bookstore CRUD App using MEAN (MongoDB, Express, Angular, Node.js) -->
+
+<div class="panel panel-default" ng-init="getTodos()">
+  <div class="panel-heading">
+    <h3 class="panel-title">Todos</h3>
+  </div>
+  <div class="panel-body">
+      <a class="btn btn-primary" href="#/todos/add">Add Todo</a>
+    <div class="row">
+    	<div ng-repeat="todo in todos">
+    		<div class="col-md-12">
+                <h4>{{todo.title}}</h4> 
+                <h4>{{todo.priority}}</h4>     
+                <a class="btn btn-primary" href="#/todos/edit/{{todo._id}}">Edit</a>
+                <a class="btn btn-primary" href="#" ng-click="removeTodo(todo._id)">Delete</a>
+            </div>
+    	</div>
+    </div>
+  </div>
+</div>
